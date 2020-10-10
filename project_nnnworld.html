@@ -39,7 +39,6 @@
                         _w = w;
                         _h = h;
                         var msg = { key: 'login-frame-size', width: w, height: h };
-                        window.parent.postMessage(msg, "*");
                     }
                     setTimeout(updateFormSize, 300);
                 }
