@@ -37,7 +37,7 @@ h2{font-size: 44px; line-height: 55px; font-family:robo; margin:10px 0}
 .robo-font{font-family: robo}
 .xerox-font{font-family: XEROX}
 .modeka-font{font-family: modeka}
-.verdana-font{font-family: Verdana}
+.verdana-font{font-family:Verdana; font-size:15px}
 .XGC-par{font-size: 18px; line-height: 22px; font-family: 'Share Tech Mono', monospace; color: #fff}
 .A-center {
   display: block;
