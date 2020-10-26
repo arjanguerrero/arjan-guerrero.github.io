@@ -44,6 +44,11 @@ h2{font-size: 44px; line-height: 55px; font-family:robo; margin:10px 0}
   margin-left: auto;
   margin-right: auto;
 }
+.A-center2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /* W3 classes */
 .w3-image{max-width:100%;height:auto}img{vertical-align:middle}a{color:inherit}
 .w3-table,.w3-table-all{border-collapse:collapse;border-spacing:0;width:100%;display:table}.w3-table-all{border:1px solid #ccc}
