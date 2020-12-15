@@ -58,8 +58,8 @@ h3{font-family:Consolas;font-weight:400;margin:10px 0}.w3-wide{letter-spacing:4p
   text-shadow: 5px 5px 5px #000;
   opacity:0.3;
 }
-.drop-shadow-2p {
-  text-shadow: 5px 5px 2px #000;
+.drop-shadow-3p {
+  text-shadow: 5px 5px 3px #000;
   opacity:0.3;
 }
 /* W3 classes */
