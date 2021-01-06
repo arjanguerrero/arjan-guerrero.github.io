@@ -29,6 +29,10 @@ legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}t
 @font-face {src: url(fonts/Modeka.otf); font-family: modeka;}
 @font-face {src: url(fonts/SoberanaTitular-Regular.otf); font-family: soberana;}
 @font-face {src: url(fonts/SoberanaTitular-Bold.otf); font-family: soberanaB;}
+@font-face {src: url(fonts/Roboto-Bold.ttf); font-family: RobotoB;}
+@font-face {src: url(fonts/Roboto-BoldItalic.ttf); font-family: RobotoBi;}
+@font-face {src: url(fonts/Roboto-Regular.ttf); font-family: RobotoR;}
+@font-face {src: url(fonts/Roboto-Italic.ttf); font-family: RobotoRi;}
 html,body{font-family:Verdana,sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
 h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-size:18px}h6{font-size:16px}.w3-serif{font-family:serif}
 h1,h4,h5,h6{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}.w3-wide{letter-spacing:4px}
@@ -43,6 +47,10 @@ h3{font-family:Consolas;font-weight:400;margin:10px 0}.w3-wide{letter-spacing:4p
 .verdana-font{font-family:Verdana; font-size:15px}
 .soberana-font{font-family: soberana}
 .soberanaB-font{font-family: soberanaB}
+.RobotoB-font{font-family: RobotoB}
+.RobotoBi-font{font-family: RobotoBi}
+.RobotoR-font{font-family: RobotoR}
+.RobotoRi-font{font-family: RobotoRi}
 .XGC-par{font-size: 18px; line-height: 22px; font-family: 'Share Tech Mono', monospace; color: #fff}
 .A-center {
   display: block;
