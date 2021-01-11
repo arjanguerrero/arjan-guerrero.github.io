@@ -185,22 +185,22 @@ function showDivs(n) {
 </div>
 
 <script>
-var slideIndex = 1;
-showDivs(slideIndex);
+var slideIndexx = 1;
+showDivss(slideIndexx);
 
 function plusDivs(n) {
-  showDivs(slideIndex += n);
+  showDivss(slideIndexx += n);
 }
 
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlidess");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
+function showDivss(n) {
+  var j;
+  var y = document.getElementsByClassName("mySlidess");
+  if (n > y.length) {slideIndexx = 1}
+  if (n < 1) {slideIndexx = y.length}
+  for (j = 0; j < y.length; j++) {
+    y[j].style.display = "none";  
   }
-  x[slideIndex-1].style.display = "block";  
+  y[slideIndexx-1].style.display = "block";  
 }
 </script>
 </div>
