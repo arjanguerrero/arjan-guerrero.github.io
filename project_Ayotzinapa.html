@@ -157,7 +157,40 @@ function showDivs(n) {
       </p>
 	    <p style="color:#ffffff; font-size:17px; font-family: Museo">Leer <i>Dictamen</i> completo <a href="/Ayotzi/Dictamen_mf_MM5.pdf" target:"_blanck">aquí</a>.
       </p>
-      <img src="/Ayotzi/Ayotzi_img - MOVconheridaG.jpg" class="w3-padding-32 A-center" style="width:100%">
+      <img src="/Ayotzi/Ayotzi_img - MOVivo.png" class="w3-padding-32 A-center" style="width:100%">
+    </div>
+
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="/Ayotzi/Ayotzi_img - Retrato_est1.jpg" style="width:100%">
+  <img class="mySlides" src="/Ayotzi/Ayotzi_img - Retrato_est2.jpg" style="width:100%">
+  <img class="mySlides" src="/Ayotzi/Ayotzi_img - RetratoPato.jpg" style="width:100%">
+  <img class="mySlides" src="/Ayotzi/Ayotzi_img - JCM general.jpg" style="width:100%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+    <div class="w3-panel" style="margin: auto; width:1000px">
       <img src="/Ayotzi/Ayotzi_img - MOVivo.png" class="w3-padding-32 A-center" style="width:100%">
     </div>
 
