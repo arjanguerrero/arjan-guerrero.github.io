@@ -246,7 +246,6 @@ function showDivss(n) {
   <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 Museo-font"  style="color:#ffffff; font-size: 25px">Exposición del proyecto en Biquini Wax EPS (2018)</h3>
 </div>
 
-<div>
 <div class="w3-content w3-display-container">
   <img class="mySlidesss" src="/Ayotzi/Ayotzi_img-expo_1.jpg" style="width:100%">
   <img class="mySlidesss" src="/Ayotzi/Ayotzi_img-expo_2.jpg" style="width:100%">
@@ -272,25 +271,24 @@ function showDivss(n) {
 </div>
 
 <script>
-var slideIndex = 1;
-showDivs(slideIndex);
+var slideIndexxx = 1;
+showDivsss(slideIndexxx);
 
 function plusDivsss(n) {
-  showDivs(slideIndex += n);
+  showDivsss(slideIndexxx += n);
 }
 
-function showDivs(n) {
+function showDivsss(n) {
   var i;
   var x = document.getElementsByClassName("mySlidesss");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
+  if (n > x.length) {slideIndexxx = 1}
+  if (n < 1) {slideIndexxx = x.length}
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";  
   }
-  x[slideIndex-1].style.display = "block";  
+  x[slideIndexxx-1].style.display = "block";  
 }
 </script>
-</div>
 
     <div class="w3-panel" style="margin: auto; width:1000px">
 	  <div class="w3-panel" style="margin: auto; width:505px">
