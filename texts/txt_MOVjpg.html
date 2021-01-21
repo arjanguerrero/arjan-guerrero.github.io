@@ -156,6 +156,34 @@ function showDivss(n) {
       </p>
     </div>
 
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="/Ayotzi/Ayotzi_img-meca_1.png" style="width:100%">
+  <img class="mySlides" src="/Ayotzi/Ayotzi_img-meca_2.png" style="width:100%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
     <div class="w3-panel" style="margin: auto; width:1000px">
       <p style="color:#ffffff; font-size:17px; font-family: Museo">Las Mecánicas de Hechos siempre se tratan de elementos que se integran para formar una composición: un conjunto de indicios que se ensamblan en la forma de un acto de violencia. A la composición también se le puede decir agenciamiento, articulación o montaje de varios objetos de cualquier tipo. Com-poner, de <i>componere</i>, es poner-con; según Heidegger (1957), una <i>Ge-stell</i>: una puesta en colectivo o en el mismo campo de identidad, por ejemplo, cuando en una manifestación civil todo mundo grita: “yo soy... ¿Quién? El campesino. Que sí, que no, el campesino”, y luego cambian el “campesino” por el “obrero”, el “normalista” o con cualquiera que se identifiquen; con lo cual, una composición es entonces el espacio colectivo donde identidades, visualidades o cualquier conjunto de cosas se vuelven lo mismo (Heidegger, 1957). Las mecánicas de la composición se han estructurado, idealizado, multiplicado, prohibido, reformulado, improvisado en variantes incontables a lo largo de la historia –de ahí que una imagen pueda ser el resultado de com-poner pero también de ante-poner, pos-poner, yuxta-poner… o im-poner, del latín <i>imponere</i>: poner-sobre <a href= "#footnotes">[8]</a>.
       </p>
