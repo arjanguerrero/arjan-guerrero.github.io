@@ -56,6 +56,8 @@ body, h1, h3, h4, h5, h6 {
 
 <!-- slideshow 1 -->
 <div class="w3-content w3-display-container">
+  <button class="w3-button w3-black" onclick="plusDivs(-1)">&#10094;</button>
+	
   	<img class="mySlides" src="/NNNW/arRock/0ea16a82776f0c8f81ca2f8b.png" style="width:25%">
 	<img class="mySlides" src="/NNNW/arRock/1e620e8ba5718ccf1fcca439.png" style="width:25%">
 	<img class="mySlides" src="/NNNW/arRock/2b802717df5c7861de3de5d5.png" style="width:25%">
@@ -67,8 +69,7 @@ body, h1, h3, h4, h5, h6 {
 	<img class="mySlides" src="/NNNW/arRock/7f7d96c093585d869f262862.png" style="width:25%">
 	<img class="mySlides" src="/NNNW/arRock/9d7379cb0c67a566f09cc26a.png" style="width:25%">
 
-  <button class="w3-button w3-black" onclick="plusDivs(-1)">&#10094;</button>
-  <button class="w3-button w3-black" onclick="plusDivs(1)">&#10095;</button>
+  <button class="w3-button w3-black" style="width:25%" onclick="plusDivs(1)">&#10095;</button>
 	<!--<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button> -->
 </div>
 <script>
@@ -108,6 +109,25 @@ function showDivs(n) {
   <button class="w3-button w3-black" style="width:30%" onclick="plusDivs(1)">&#10095;</button>
 	<!--<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button> -->
 </div>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
 
 <!-- NNNW_Explorer sketch 
 <div class="w3-padding-16 w3-center">
