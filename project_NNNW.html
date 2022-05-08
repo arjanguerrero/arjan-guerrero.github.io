@@ -54,7 +54,6 @@ body, h1, h3, h4, h5, h6 {
 </div>
 <!------------------------------------------------------------------------- NNNW_Archive -->
 
-<div class="w3-content w3-display-container">
 <!----------------------------------- arRock -->
 <div class="w3-content w3-display-container w3-padding-32">
   <button class="w3-button w3-black" style="width:25%" onclick="plusDivs(-1)">&#10094;</button>
@@ -73,9 +72,29 @@ body, h1, h3, h4, h5, h6 {
   <button class="w3-button w3-black" style="width:25%" onclick="plusDivs(1)">&#10095;</button>
 	<!--<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button> -->
 </div>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
 <!----------------------------------- disOrgan -->
-<div class="w3-panel" style="margin: auto; width:1000px">
-	<div class="w3-panel" style="margin: auto; width:505px">
+<div class="w3-panel" style="margin: auto">
+	<div class="w3-panel" style="margin: auto">
 		<p style="color:#fff; font-size:15px; font-family: Museo">class disOrgan</a>, 2018</p>
 	</div>
 </div>
@@ -97,28 +116,6 @@ body, h1, h3, h4, h5, h6 {
   <button class="w3-button w3-black" style="width:25%" onclick="plusDivs2(1)">&#10095;</button>
 	<!--<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button> -->
 </div>
-</div>
-	
-<script>
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "block";  
-}
-</script>
-	
 <script>
 var slideIndex2 = 1;
 showDivs2(slideIndex2);
