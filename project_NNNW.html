@@ -74,6 +74,8 @@ body, h1, h3, h4, h5, h6 {
 <!--</div>-->
 <!----------------------------------- slideshow 2 -->
 <!--<div class="w3-content w3-display-container">-->
+  <button class="w3-button w3-black" style="width:25%" onclick="plusDivs2(-1)">&#10094;</button>
+	
   	<img class="mySlides2" src="/NNNW/disOrgan/1bef58fd05af60204f2607ab.png" style="width:25%">
 	<img class="mySlides2" src="/NNNW/disOrgan/2e996084f64b48e618f853de.png" style="width:25%">
 	<img class="mySlides2" src="/NNNW/disOrgan/32db0d09f444bc33bdbfd032.png" style="width:25%">
@@ -85,10 +87,10 @@ body, h1, h3, h4, h5, h6 {
 	<img class="mySlides2" src="/NNNW/disOrgan/a32bd397d87ec6580bb072ad.png" style="width:25%">
 	<img class="mySlides2" src="/NNNW/disOrgan/e9e88bc46e2b5a812d7acfa9.png" style="width:25%">
 
-  <button class="w3-button w3-black" style="width:25%" onclick="plusDivs2(-1)">&#10094;</button>
   <button class="w3-button w3-black" style="width:25%" onclick="plusDivs2(1)">&#10095;</button>
 	<!--<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button> -->
 </div>
+	
 <script>
 var slideIndex = 1;
 showDivs(slideIndex);
@@ -120,12 +122,12 @@ function plusDivs2(n) {
 function showDivs2(n) {
   var j;
   var y = document.getElementsByClassName("mySlides2");
-  if (n > x.length) {slideIndex2 = 1}
-  if (n < 1) {slideIndex2 = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
+  if (n > y.length) {slideIndex2 = 1}
+  if (n < 1) {slideIndex2 = y.length}
+  for (j = 0; j < y.length; j++) {
+    y[j].style.display = "none";  
   }
-  x[slideIndex2-1].style.display = "block";  
+  y[slideIndex2-1].style.display = "block";  
 }
 </script>
 
