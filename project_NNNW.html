@@ -105,27 +105,27 @@ function showDivs(n) {
 	<img class="mySlides2" src="/NNNW/disOrgan/a32bd397d87ec6580bb072ad.png" style="width:25%">
 	<img class="mySlides2" src="/NNNW/disOrgan/e9e88bc46e2b5a812d7acfa9.png" style="width:25%">
 
-  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black" style="width:25%" onclick="plusDivs(-1)">&#10094;</button>
   <button class="w3-button w3-black" style="width:25%" onclick="plusDivs(1)">&#10095;</button>
 	<!--<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button> -->
 </div>
 <script>
-var slideIndex = 1;
-showDivs(slideIndex);
+var slideIndex2 = 1;
+showDivs2(slideIndex2);
 
-function plusDivs(n) {
-  showDivs(slideIndex += n);
+function plusDivs2(n) {
+  showDivs2(slideIndex2 += n);
 }
 
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides2");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
+function showDivs2(n) {
+  var j;
+  var y = document.getElementsByClassName("mySlides2");
+  if (n > x.length) {slideIndex2 = 1}
+  if (n < 1) {slideIndex2 = x.length}
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";  
   }
-  x[slideIndex-1].style.display = "block";  
+  x[slideIndex2-1].style.display = "block";  
 }
 </script>
 
