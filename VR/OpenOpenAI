@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+  <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js" type="text/javascript"></script>
+</head>
+<title>MF</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/W3_CSS mod.css">
+<body style="background-image: linear-gradient(rgba(204,229,255,1), rgba(62,35,193,1))">
+<style>
+body, h1, h3, h4, h5, h6 {
+  font-family: "Times New Roman", serif;
+  font-size: 16px;
+  text-align: justify;
+}
+</style>
+<body>
+    
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar A-transparent-back w2-wide">
+    <a href="https://mediaforensis.agency/#home" class="w3-bar-item w3-button drop-shadow-3p" style="letter-spacing:1px; font-size:90px; color:rgba(255, 255, 255, 0); font-family:robo; line-height: 90px">MF</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="https://mediaforensis.agency/#projects" class="w3-bar-item w3-button drop-shadow-3p" style="letter-spacing:1px; font-size:25px; color:rgba(255, 255, 255, 0); font-family: Museo; line-height: 20px"><b>cases</b></a>
+      <br>
+      <a href="https://mediaforensis.agency/#about" class="w3-bar-item w3-button drop-shadow-3p" style="letter-spacing:1px; font-size:25px; color:rgba(255, 255, 255, 0); font-family: Museo; line-height: 20px"><b>about</b></a>
+      <br>
+      <a href="https://mediaforensis.agency/#texts" class="w3-bar-item w3-button drop-shadow-3p" style="letter-spacing:1px; font-size:25px; color:rgba(255, 255, 255, 0); font-family: Museo; line-height: 20px"><b>texts</b></a>
+      <br>
+      <a href="https://mediaforensis.agency/#edu" class="w3-bar-item w3-button drop-shadow-3p" style="letter-spacing:1px; font-size:25px; color:rgba(255, 255, 255, 0); font-family: Museo; line-height: 20px"><b>edu</b></a>
+      <br>
+      <a href="https://mediaforensis.agency/#contact" class="w3-bar-item w3-button drop-shadow-3p" style="letter-spacing:1px; font-size:25px; color:rgba(255, 255, 255, 0); font-family: Museo; line-height: 20px"><b>contact</b></a>
+    </div>
+  </div>
+</div>
+
+<!-- Full size image -->
+  <img src="/AR/RS-header.png" style="width:100%">
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+    <div class="w3-container">
+        <h2 class="drop-shadow robo-font" style="color:#ffffff; font-size:90px; line-height: 90px">OpenOpenAI</h2>
+      <p style="color:#ffffff; font-size:17px; font-family: SpaceGL">An ARapp for eco-sensible ARtworks</p>
+      <hr>
+    </div>
+</div>
+	
+<!------------------------------------------------------------------------- INTRO ----------------------------------------------------->
+<div class="w3-container w3-padding-32" id="retratos">
+  <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 Museo-font"  style="color:#ffffff; font-size: 25px">Introduction – Arjan Guerrero</h3>
+</div>
+
+<div class="w3-panel" style="margin: auto; width:1000px">
+	<p style="color:#ffffff; font-size:17px; font-family: Museo">Having a background in Fine Arts, I wanted to develop a system that could be implemented in different ways for different projects. So I proposed to my group to work on a "reactive substance" that would exist in AR and be affected through interaction. Later on, the group took further the idea into developing several reactive substances that would use a custom shader each and would get an individual ID emulating the Periodic Table.
+     	</p>
+	<p style="color:#ffffff; font-size:17px; font-family: Museo">My participation in the group project involved proposing the original idea and the general pipeline comprising: the use of location-based tracking to put the reactive substance in the space; a custom shader that would give it a specific look; the use of the mobile device position in 3D space to interact with the substance; and implementing that interaction by means of mapping the mobile device’s proximity (in relation to the substance) to a range of values in several features of the custom shader. I also made sound design for the app, editing in Ableton Live samples provided by the group.
+	</p>
+</div>
+<!------------------------------------------------------------------------- Brief ----------------------------------------------------->
+<div class="w3-container w3-padding-32" id="retratos">
+  <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 Museo-font"  style="color:#ffffff; font-size: 25px">Brief</h3>
+</div>
+
+<div class="w3-panel" style="margin: auto; width:1000px">
+	<p style="color:#ffffff; font-size:17px; font-family: Museo">Reactive Substances is a mobile device-based AR app for eco-adaptive ARtworks. The implementation presents a series of virtual Substances that were given specific looks and behaviors using custom shaders. The Substances pop-up in the exhibition space –either a gallery, a street or a classroom– and fix to the space using image trackers. This iteration uses the aesthetics of the Periodic Table, which can have an interplay with both the elements on-screen and the objects off-screen, and it’s available interaction is based on the user’s navigation through 3D space.
+     	</p>
+</div>
+<!------------------------------------------------------------------------- User Journey ----------------------------------------------------->
+<div class="w3-container w3-padding-32" id="retratos">
+  <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 Museo-font"  style="color:#ffffff; font-size: 25px">User Journey</h3>
+</div>
+
+<div class="w3-panel" style="margin: auto; width:1000px">
+	<p style="color:#ffffff; font-size:17px; font-family: Museo">The user opens the app and, as indicated to them by a gallery assistant, they will approach the custom image trackers around the space and discover the Reactive Substances that will pop-up on the screen of the mobile device as sounds come and go as perceived through a pair of headphones. There is no fixed trajectory for the user; the Reactive Substances can adapt to every space and the order in which they are approached depends on the user themselves.
+     	</p>
+</div>
+<!------------------------------------------------------------------------- Breakdown ----------------------------------------------------->
+<div class="w3-container w3-padding-32" id="retratos">
+  <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 Museo-font"  style="color:#ffffff; font-size: 25px">Breakdown</h3>
+</div>
+
+<div class="w3-panel" style="margin: auto; width:1000px">
+	<p style="color:#ffffff; font-size:17px; font-family: Museo">CUSTOM CODE
+     	</p>
+	<p style="color:#ffffff; font-size:17px; font-family: Museo">I contributed several code snippets to help make the app more sophisticated:
+     	</p>
+	<p style="color:#ffffff; font-size:17px; font-family: Museo"><a href="https://drive.google.com/file/d/1QPRSt7yNeL7onQJ7yj5Ekky67yW6OpAj/view?usp=share_link">Helpers.cs</a>
+     	</p>
+	<p style="color:#ffffff; font-size:17px; font-family: Museo">Contains a custom funtion for mapping values (I didn’t found an equivalent of C++’s Map() in C#, but found this). I used it several times for the exhibition at the church.
+     	</p>
+	<p style="color:#ffffff; font-size:17px; font-family: Museo"><a href="https://drive.google.com/file/d/1mtFWNFGtMZOx6uLIkZqSk56MACXm4-2m/view?usp=share_link">ParticleControl.cs</a>
+     	</p>
+	<p style="color:#ffffff; font-size:17px; font-family: Museo">Can be used to generate random movement modifying X, Y, or Z values of a transform.position individually.
+     	</p>
+	<p style="color:#ffffff; font-size:17px; font-family: Museo"><a href="https://drive.google.com/file/d/1pIg7BvjoFBgDzfdKCc1EgGphEBSLMX_9/view?usp=share_link">PPcontroller.cs</a>
+     	</p>
+	<p style="color:#ffffff; font-size:17px; font-family: Museo">Used to have a moving transform as the spawning origin for a VisualEffect particle system.
+     	</p>
+	<p style="color:#ffffff; font-size:17px; font-family: Museo"><a href="https://drive.google.com/file/d/1pbBIBGc1Z4VZFfqHxsXxrzwHFlNyi89L/view?usp=share_link">ShaderController.cs</a>
+     	</p>
+	<p style="color:#ffffff; font-size:17px; font-family: Museo">Snippets for calculating a normalized distance (to 0-1) between two transforms, which can be used, for instance, to modulate a Shader parameter that ranges 0-1.
+     	</p>
+	<p style="color:#ffffff; font-size:17px; font-family: Museo"><a href="https://drive.google.com/file/d/1oUg5gU-g0bUrjcX0TCZHccaA3dRhYAp4/view?usp=share_link">SoundControl.cs</a>
+     	</p>
+	<p style="color:#ffffff; font-size:17px; font-family: Museo">Normalizes an input (maps is to 0-1) and applies the output to an audio source.
+     	</p>
+	<p style="color:#ffffff; font-size:17px; font-family: Museo">CUSTOM MATERIALS-SHADERS
+     	</p>
+	<img src="/AR/IMG_5513.PNG" class="A-center" style="width:40%">
+	<p style="color:#ffffff; font-size:17px; font-family: Museo">I created a custom material + shader that I used at the exhibition. It is not included in the final project as we prioritize what other members of the group made in order to balance out the individual participations.
+     	</p>
+	<p style="color:#ffffff; font-size:17px; font-family: Museo">SOUND DESIGN
+     	</p>
+	<p style="color:#ffffff; font-size:17px; font-family: Museo">Using samples and synthesized sounds edited together in Ableton Live, I made the sounds for the Reactive Substance I used at the exhibition. For the final project, I edited samples found by group in Ableton Live (<a href="https://drive.google.com/drive/folders/17fJvLQ5wtBN2EPqdIjpc5ew_5uWYJyYL?usp=share_link">find them here</a>).
+     	</p>
+	<p style="color:#ffffff; font-size:17px; font-family: Museo">PROJECT MANAGEMENT
+     	</p>
+	<p style="color:#ffffff; font-size:17px; font-family: Museo">I made this “URP for AR for iOS” guide putting together what I gather from forums, from Marco, etc. It helped to undergo the building process in a less painful and a faster way.
+     	</p>
+	<p style="color:#ffffff; font-size:17px; font-family: Museo"><a href="https://docs.google.com/document/d/1hPfW3fu3QwLs6zVhy8jzxV7nRYFugZ0gE0NYif8IErc/edit?usp=share_link">https://docs.google.com/document/d/1hPfW3fu3QwLs6zVhy8jzxV7nRYFugZ0gE0NYif8IErc/edit?usp=share_link</a>).
+     	</p>
+	<p style="color:#ffffff; font-size:17px; font-family: Museo">I also managed a Drive and proposed a organization document based on task completion.
+     	</p>
+	<p style="color:#ffffff; font-size:17px; font-family: Museo">Overall, I lead coordination and workflow until the the hard fork we did after my exhibition –Catalina took over from there. Part of my contribution was also teaching Catalina and Jiaqi how to use git with Github –although we didn’t manage to work best with it in the end. Anyway, I kept track of the development in <a href="https://github.com/arjanguerrero/ReactiveSubstances">this Github repo.</a>
+     	</p>
+</div>
+<!------------------------------------------------------------------------- Walkthrough Video ----------------------------------------------------->
+<div class="w3-container w3-padding-32" id="retratos">
+  <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 Museo-font"  style="color:#ffffff; font-size: 25px">Walkthrough Video</h3>
+</div>
+
+<div class="w3-padding-16 w3-center">
+	<iframe title="vimeo-player" src="https://player.vimeo.com/video/789883272?h=e1b5e6bd93" width="640" height="1137" frameborder="0" allowfullscreen></iframe>
+	<div class="w3-panel" style="margin: auto; width:500px">
+	<p style="color:#ffffff; font-size:15px; font-family: Museo">Walkthgough at the lab.</p>
+	</div>
+</div>
+<!------------------------------------------------------------------------- Reflection ----------------------------------------------------->
+<div class="w3-container w3-padding-32" id="retratos">
+  <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 Museo-font"  style="color:#ffffff; font-size: 25px">Reflection</h3>
+</div>
+	
+<div class="w3-panel" style="margin: auto; width:1000px">
+	<p style="color:#ffffff; font-size:17px; font-family: Museo">The initial brief described an AR system in which the interaction works beyond touching the screen or contemplating on-screen realities that, even if “immersive”, have a shallow technical relationship with reality off-screen. The AR objects didn’t get to be environment-sensible but got to be dynamically reactive to the behavior of the user, and to provoque a sense of kinetic relationship. That was achieved at some point of the development –and was presented at the MFA WIP exhibition in December– but the participation imbalance within the group brought the need of branching towards a different system. In the final state of the project, using custom image trackers, the system can be deployed through as an installation of dynamic virtual sculptures that inhabit the exhibition space.
+     	</p>
+	<p style="color:#ffffff; font-size:17px; font-family: Museo">The following video shows a walk-through of the middle-point development of the project:
+     	</p>
+	<div class="w3-padding-16 w3-center">
+	<iframe src="https://player.vimeo.com/video/782291986?h=c92ecb89a5" width="640" height="1138" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+	<p style="color:#ffffff; font-size:15px; font-family: Museo">Walkthgough at the MFA Computational Arts WIP exhibition at St. Hatcham Building.</p>
+	</div>
+</div>
+<div class="w3-panel" style="margin: auto; width:1000px">
+	<p style="color:#ffffff; font-size:17px; font-family: Museo">Trying to match the location of the virtual assets to a specific physical space was very complicated. I’ve found a bit confusing the way Unity translates parented positions and rotations (or the way it interfaces them for the user).
+     	</p>
+	<p style="color:#ffffff; font-size:17px; font-family: Museo">Getting the whole pipeline to work (Unity, Foundation AR, ARkit, Xcode, iOS) can be quite tricky. Pipelines are always tricky and it feels like software is usually better designed for its inner workings than in its “foreign policies”.
+     	</p>
+</div>
+
+
+<div class="w3-right-align w3-container Museo-font">
+	<p style="color:#fff; font-size:25px"><a href="/project_XGC.html">Next project ></a></p>
+</div>
+
+   
+</body>
+</html>
