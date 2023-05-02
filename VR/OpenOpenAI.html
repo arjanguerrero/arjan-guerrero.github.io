@@ -41,7 +41,7 @@ body, h1, h3, h4, h5, h6 {
 </div>
 
 <!-- Full size image -->
-  <img src="/VR/imgs/OOAI-1.png" style="width:100%">
+  <img src="/VR/imgs/OOAI-cover.png" style="width:100%">
 
 <!-- Page content -->
 <div class="w3-content w3-padding" style="max-width:1564px">
@@ -55,11 +55,11 @@ body, h1, h3, h4, h5, h6 {
 	
 <!------------------------------------------------------------------------- INTRO ----------------------------------------------------->
 <div class="w3-container w3-padding-32" id="retratos">
-  <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 Museo-font"  style="color:#ffffff; font-size: 25px">Introduction – Arjan Guerrero</h3>
+  <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 Museo-font"  style="color:#ffffff; font-size: 25px">Intro</h3>
 </div>
 
 <div class="w3-panel" style="margin: auto; width:1000px">
-	<p style="color:#ffffff; font-size:17px; font-family: Museo">I am a digital – increasingly computational – generalist with a background in Fine Arts. As an artist, I’m experienced in Creative Direction and conceptual backend development. As a Computational Arts MFA student, I’m also skilled in coding and systemic integration.
+	<p style="color:#ffffff; font-size:17px; font-family: Museo">I am a digital – increasingly computational – generalist with a background in Fine Arts. As an artist, I’m experienced in Creative Direction and conceptual backend development. As a Computational Arts MFA student, I’m also skilled in coding and systemic integration. My professional interests gather around working with automation, augmentation, and interactive media to develop worldbuilding investigations about more-than-human agency, intelligence, and interdependence.
      	</p>
 </div>
 <!------------------------------------------------------------------------- Brief ----------------------------------------------------->
@@ -84,55 +84,63 @@ body, h1, h3, h4, h5, h6 {
 	<p style="color:#ffffff; font-size:17px; font-family: Museo">Throughout the game, the player is given context and guidance by an AI created ex professo to assist on this mission.
      	</p>
 </div>
-<!------------------------------------------------------------------------- Breakdown ----------------------------------------------------->
+<!------------------------------------------------------------------------- Concept ----------------------------------------------------->
 <div class="w3-container w3-padding-32" id="retratos">
-  <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 Museo-font"  style="color:#ffffff; font-size: 25px">Contribution breakdown</h3>
+  <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 Museo-font"  style="color:#ffffff; font-size: 25px">Concept</h3>
 </div>
 
 <div class="w3-panel" style="margin: auto; width:1000px">
-	<p style="color:#ffffff; font-size:17px; font-family: Museo">CUSTOM CODE
+	<p style="color:#ffffff; font-size:17px; font-family: Museo">My role at OpenOpenAI drew from all of the mentioned aspects of my professional profile. Starting with the common interest in working on a puzzle game and drawing from the storyline creation assisted by ChatGPT, I proposed making such a working relationship with ChatGPT as the base of our storyline and gameplay – i.e., creating a VR experience inside a narrative world created by ChatGPT as an exploration of ChatGPT’s mind. Pretty meta.
      	</p>
-	<p style="color:#ffffff; font-size:17px; font-family: Museo">I contributed several code snippets to help make the app more sophisticated:
+</div>
+<!------------------------------------------------------------------------- Storyline + Gameplay ----------------------------------------------------->
+<div class="w3-container w3-padding-32" id="retratos">
+  <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 Museo-font"  style="color:#ffffff; font-size: 25px">Storyline + Gameplay</h3>
+</div>
+
+<div class="w3-panel" style="margin: auto; width:1000px">
+	<p style="color:#ffffff; font-size:17px; font-family: Museo">The script for the storyline, developed with Catalina, was a result of iterative re-processing through ChatGPT. We ended up with a highly edited script that’s user-friendly and short enough to be narrated through voiceover without negatively disturbing the player’s experience. That also structured – and was structured by – the gameplay and level design.
      	</p>
-	<p style="color:#ffffff; font-size:17px; font-family: Museo"><a href="https://drive.google.com/file/d/1QPRSt7yNeL7onQJ7yj5Ekky67yW6OpAj/view?usp=share_link">Helpers.cs</a>
+	<img src="/VR/imgs/chattingGPT-2.png" class="A-center" style="width:40%">
+</div>
+<!------------------------------------------------------------------------- Custom code ----------------------------------------------------->
+<div class="w3-container w3-padding-32" id="retratos">
+  <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 Museo-font"  style="color:#ffffff; font-size: 25px">Custom code</h3>
+</div>
+
+<div class="w3-panel" style="margin: auto; width:1000px">
+	<p style="color:#ffffff; font-size:17px; font-family: Museo">I contributed various scripts for the implementation of the puzzle pieces collection:
      	</p>
-	<p style="color:#ffffff; font-size:17px; font-family: Museo">Contains a custom funtion for mapping values (I didn’t found an equivalent of C++’s Map() in C#, but found this). I used it several times for the exhibition at the church.
+	<p style="color:#ffffff; font-size:17px; font-family: Museo"><a href="https://drive.google.com/file/d/1yzKhLO-n7HQH-FksNCTkMbhA9ZMocL1Q/view?usp=share_link">GameEvents.cs</a>
      	</p>
-	<p style="color:#ffffff; font-size:17px; font-family: Museo"><a href="https://drive.google.com/file/d/1mtFWNFGtMZOx6uLIkZqSk56MACXm4-2m/view?usp=share_link">ParticleControl.cs</a>
+	<p style="color:#ffffff; font-size:17px; font-family: Museo">It implements an event system that allows for counting the pieces grabbed and the pieces placed on the puzzle board at the end of the game, as well as for knowing when to activate the portals and when is the game finished.
      	</p>
-	<p style="color:#ffffff; font-size:17px; font-family: Museo">Can be used to generate random movement modifying X, Y, or Z values of a transform.position individually.
+	<img src="/VR/imgs/snippet-GameEvents.png" class="A-center" style="width:40%">
+	<p style="color:#ffffff; font-size:17px; font-family: Museo"><a href="https://drive.google.com/file/d/1ym0eR2ASJ8sJXZE9PGH678SChJTFKISf/view?usp=share_link">PPiece.cs</a>
      	</p>
-	<p style="color:#ffffff; font-size:17px; font-family: Museo"><a href="https://drive.google.com/file/d/1pIg7BvjoFBgDzfdKCc1EgGphEBSLMX_9/view?usp=share_link">PPcontroller.cs</a>
+	<p style="color:#ffffff; font-size:17px; font-family: Museo">When the puzzle piece is grabbed, it calls the OneMorePiece() function from GameEvents.cs events manager and deactivates the piece after 2 seconds.
      	</p>
-	<p style="color:#ffffff; font-size:17px; font-family: Museo">Used to have a moving transform as the spawning origin for a VisualEffect particle system.
+	<img src="/VR/imgs/snippet-PPiece.png" class="A-center" style="width:40%">
+	<p style="color:#ffffff; font-size:17px; font-family: Museo"><a href="https://drive.google.com/file/d/1ZDWXw1qeAa6TDyzit9VVUTB5U26ltU_6/view?usp=share_link">PuzzleManager.cs</a>
      	</p>
-	<p style="color:#ffffff; font-size:17px; font-family: Museo"><a href="https://drive.google.com/file/d/1pbBIBGc1Z4VZFfqHxsXxrzwHFlNyi89L/view?usp=share_link">ShaderController.cs</a>
+	<p style="color:#ffffff; font-size:17px; font-family: Museo">Prompted by the event system, it counts the puzzle pieces (grabbed and placed). It opens the portals when appropriate and informs the player of the measurements.
      	</p>
-	<p style="color:#ffffff; font-size:17px; font-family: Museo">Snippets for calculating a normalized distance (to 0-1) between two transforms, which can be used, for instance, to modulate a Shader parameter that ranges 0-1.
+	<img src="/VR/imgs/snippet-PManager.png" class="A-center" style="width:40%">
+	<p style="color:#ffffff; font-size:17px; font-family: Museo"><a href="https://drive.google.com/file/d/1tnz_ql-6qu1DsQ5WsXTK2YFej5_iM8w7/view?usp=share_link">Score.cs</a>
      	</p>
-	<p style="color:#ffffff; font-size:17px; font-family: Museo"><a href="https://drive.google.com/file/d/1oUg5gU-g0bUrjcX0TCZHccaA3dRhYAp4/view?usp=share_link">SoundControl.cs</a>
+	<p style="color:#ffffff; font-size:17px; font-family: Museo">It renders the score (pieces grabbed) on the screen for the player.
      	</p>
-	<p style="color:#ffffff; font-size:17px; font-family: Museo">Normalizes an input (maps is to 0-1) and applies the output to an audio source.
+	<img src="/VR/imgs/snippet-Score.png" class="A-center" style="width:40%">
+</div>
+<!------------------------------------------------------------------------- Sound design ----------------------------------------------------->
+<div class="w3-container w3-padding-32" id="retratos">
+  <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 Museo-font"  style="color:#ffffff; font-size: 25px">Sound design</h3>
+</div>
+
+<div class="w3-panel" style="margin: auto; width:1000px">
+	<p style="color:#ffffff; font-size:17px; font-family: Museo">Using samples and synthesized sounds edited in Ableton Live, I made the interaction sounds and the background musical loop. For the final project.
      	</p>
-	<p style="color:#ffffff; font-size:17px; font-family: Museo">CUSTOM MATERIALS-SHADERS
-     	</p>
-	<img src="/AR/IMG_5513.PNG" class="A-center" style="width:40%">
-	<p style="color:#ffffff; font-size:17px; font-family: Museo">I created a custom material + shader that I used at the exhibition. It is not included in the final project as we prioritize what other members of the group made in order to balance out the individual participations.
-     	</p>
-	<p style="color:#ffffff; font-size:17px; font-family: Museo">SOUND DESIGN
-     	</p>
-	<p style="color:#ffffff; font-size:17px; font-family: Museo">Using samples and synthesized sounds edited together in Ableton Live, I made the sounds for the Reactive Substance I used at the exhibition. For the final project, I edited samples found by group in Ableton Live (<a href="https://drive.google.com/drive/folders/17fJvLQ5wtBN2EPqdIjpc5ew_5uWYJyYL?usp=share_link">find them here</a>).
-     	</p>
-	<p style="color:#ffffff; font-size:17px; font-family: Museo">PROJECT MANAGEMENT
-     	</p>
-	<p style="color:#ffffff; font-size:17px; font-family: Museo">I made this “URP for AR for iOS” guide putting together what I gather from forums, from Marco, etc. It helped to undergo the building process in a less painful and a faster way.
-     	</p>
-	<p style="color:#ffffff; font-size:17px; font-family: Museo"><a href="https://docs.google.com/document/d/1hPfW3fu3QwLs6zVhy8jzxV7nRYFugZ0gE0NYif8IErc/edit?usp=share_link">https://docs.google.com/document/d/1hPfW3fu3QwLs6zVhy8jzxV7nRYFugZ0gE0NYif8IErc/edit?usp=share_link</a>).
-     	</p>
-	<p style="color:#ffffff; font-size:17px; font-family: Museo">I also managed a Drive and proposed a organization document based on task completion.
-     	</p>
-	<p style="color:#ffffff; font-size:17px; font-family: Museo">Overall, I lead coordination and workflow until the the hard fork we did after my exhibition –Catalina took over from there. Part of my contribution was also teaching Catalina and Jiaqi how to use git with Github –although we didn’t manage to work best with it in the end. Anyway, I kept track of the development in <a href="https://github.com/arjanguerrero/ReactiveSubstances">this Github repo.</a>
-     	</p>
+	<img src="/VR/imgs/sounDesign.png" class="A-center" style="width:40%">
 </div>
 <!------------------------------------------------------------------------- Walkthrough Video ----------------------------------------------------->
 <div class="w3-container w3-padding-32" id="retratos">
@@ -151,22 +159,10 @@ body, h1, h3, h4, h5, h6 {
 </div>
 	
 <div class="w3-panel" style="margin: auto; width:1000px">
-	<p style="color:#ffffff; font-size:17px; font-family: Museo">The initial brief described an AR system in which the interaction works beyond touching the screen or contemplating on-screen realities that, even if “immersive”, have a shallow technical relationship with reality off-screen. The AR objects didn’t get to be environment-sensible but got to be dynamically reactive to the behavior of the user, and to provoque a sense of kinetic relationship. That was achieved at some point of the development –and was presented at the MFA WIP exhibition in December– but the participation imbalance within the group brought the need of branching towards a different system. In the final state of the project, using custom image trackers, the system can be deployed through as an installation of dynamic virtual sculptures that inhabit the exhibition space.
-     	</p>
-	<p style="color:#ffffff; font-size:17px; font-family: Museo">The following video shows a walk-through of the middle-point development of the project:
-     	</p>
-	<div class="w3-padding-16 w3-center">
-	<iframe src="https://player.vimeo.com/video/782291986?h=c92ecb89a5" width="640" height="1138" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-	<p style="color:#ffffff; font-size:15px; font-family: Museo">Walkthgough at the MFA Computational Arts WIP exhibition at St. Hatcham Building.</p>
-	</div>
-</div>
-<div class="w3-panel" style="margin: auto; width:1000px">
-	<p style="color:#ffffff; font-size:17px; font-family: Museo">Trying to match the location of the virtual assets to a specific physical space was very complicated. I’ve found a bit confusing the way Unity translates parented positions and rotations (or the way it interfaces them for the user).
-     	</p>
-	<p style="color:#ffffff; font-size:17px; font-family: Museo">Getting the whole pipeline to work (Unity, Foundation AR, ARkit, Xcode, iOS) can be quite tricky. Pipelines are always tricky and it feels like software is usually better designed for its inner workings than in its “foreign policies”.
+	<p style="color:#ffffff; font-size:17px; font-family: Museo">Our brief covered an immersive 3D experience of a challenging puzzle, all guided by a compelling narrative. My assessment would be that our team accomplished an immersive 3D experience guided by a compelling narrative. The major improvements to the project could be done on the level design and gameplay to make the puzzle game more challenging – challenging puzzles are challenging to design of course. The interaction works well after overcoming some glitches and dizzying effects, but could still run more smoothly.
      	</p>
 </div>
-
+<!------------------------------------------------------------------------------------------------------------------------------------------------>
 
 <div class="w3-right-align w3-container Museo-font">
 	<p style="color:#fff; font-size:25px"><a href="/project_XGC.html">Next project ></a></p>
