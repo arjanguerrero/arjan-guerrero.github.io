@@ -92,6 +92,12 @@ h3{font-family:Consolas;font-weight:400;margin:10px 0}.w3-wide{letter-spacing:4p
     font-family: NeutralM;
     font-size: 15px;
 }
+.shadow-title {
+    color: rgba(0, 0, 0, 0);
+    font-family: NeutralM;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
 .A-center {
   display: block;
   margin-left: auto;
