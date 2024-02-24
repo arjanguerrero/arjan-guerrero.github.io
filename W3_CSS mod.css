@@ -38,10 +38,14 @@ legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}t
 @font-face {src: url(fonts/Montserrat-Thin.ttf); font-family: Montse;}
 @font-face {src: url(fonts/Montserrat-Light.ttf); font-family: MontseL;}
 @font-face {src: url(fonts/SpaceGrotesk-Light.ttf); font-family: SpaceGL;}
-@font-face {src: url(fonts/NeutralFace-Bold.otf); font-family: NeutralB;}
-@font-face {src: url(fonts/NeutralFace.otf); font-family: Neutral;}
-@font-face {src: url(fonts/NeutralFace.otf); font-family: Body;}
-@font-face {src: url(fonts/NeutralFace.otf); font-family: Title;}
+@font-face {src: url(fonts/NeutralStd-Regular.otf); font-family: Neutral;}
+@font-face {src: url(fonts/NeutralStd-RegularItalic.otf); font-family: NeutralIta;}
+@font-face {src: url(fonts/NeutralStd-Bold.otf); font-family: NeutralB;}
+@font-face {src: url(fonts/NeutralStd-BoldItalic.otf); font-family: NeutralBIta;}
+@font-face {src: url(fonts/NeutralStd-Medium.otf); font-family: NeutralM;}
+@font-face {src: url(fonts/NeutralStd-MediumItalic.otf); font-family: NeutralMIta;}
+@font-face {src: url(fonts/NeutralStd-Regular.otf); font-family: Body;}
+@font-face {src: url(fonts/NeutralStd-Medium.otf); font-family: Title;}
 html,body{font-family:Verdana,sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
 h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-size:18px}h6{font-size:16px}.w3-serif{font-family:serif}
 h1,h4,h5,h6{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}.w3-wide{letter-spacing:4px}
@@ -67,10 +71,14 @@ h3{font-family:Consolas;font-weight:400;margin:10px 0}.w3-wide{letter-spacing:4p
 .Montse-font{font-family: Montse}
 .MontseL-font{font-family: MontseL}
 .SpaceGL-font{font-family: SpaceGL}
-.NeutralB-font{font-family: NeutralB}
 .Neutral-font{font-family: Neutral}
+.NeutralIta-font{font-family: NeutralIta}
+.NeutralB-font{font-family: NeutralB}
+.NeutralBIta-font{font-family: NeutralBIta}
+.NeutralM-font{font-family: NeutralM}
+.NeutralMIta-font{font-family: NeutralMIta}
 .Body-font{font-family: Neutral}
-.Title-font{font-family: Title}
+.Title-font{font-family: NeutralM}
 .XGC-par{font-size: 18px; line-height: 22px; font-family: 'Share Tech Mono', monospace; color: #fff}
 .A-center {
   display: block;
