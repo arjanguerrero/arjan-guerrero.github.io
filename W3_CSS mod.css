@@ -86,6 +86,12 @@ h3{font-family:Consolas;font-weight:400;margin:10px 0}.w3-wide{letter-spacing:4p
     font-family: Body;
     font-size: 15px;
 }
+.body-footnote {
+    color: #000000;
+    max-width: 650px;
+    font-family: Body;
+    font-size: 12px;
+}
 .body-bold {
     color: #000000;
     max-width: 650px;
