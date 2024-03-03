@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html>
+
 <head>
   <meta charset="UTF-8">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
@@ -11,132 +12,159 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="/W3_CSS mod.css">
+
 <body style="background-image: linear-gradient(rgba(255,255,255,1), rgba(255,255,255,255))">
-<style>
-body, h1, h3, h4, h5, h6 {
-  font-family: "Times New Roman", serif;
-  font-size: 16px;
-  text-align: justify;
-}
-</style>
-<body>
-    
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar A-transparent-back w2-wide">
-    <a href="https://mediaforensis.agency/#home" class="w3-bar-item w3-button drop-shadow-3p" style="letter-spacing:1px; font-size:90px; color:rgba(255, 255, 255, 0); font-family:robo; line-height: 90px">MF</a>
-    <!-- Float links to the right. Hide them on small screens -->
-    <div class="w3-right w3-hide-small">
-      <a href="https://mediaforensis.agency/#projects" class="w3-bar-item w3-button drop-shadow-3p" style="letter-spacing:1px; font-size:25px; color:rgba(255, 255, 255, 0); font-family: Museo; line-height: 20px"><b>cases</b></a>
-      <br>
-      <a href="https://mediaforensis.agency/#about" class="w3-bar-item w3-button drop-shadow-3p" style="letter-spacing:1px; font-size:25px; color:rgba(255, 255, 255, 0); font-family: Museo; line-height: 20px"><b>about</b></a>
-      <br>
-      <a href="https://mediaforensis.agency/#texts" class="w3-bar-item w3-button drop-shadow-3p" style="letter-spacing:1px; font-size:25px; color:rgba(255, 255, 255, 0); font-family: Museo; line-height: 20px"><b>texts</b></a>
-      <br>
-      <a href="https://mediaforensis.agency/#edu" class="w3-bar-item w3-button drop-shadow-3p" style="letter-spacing:1px; font-size:25px; color:rgba(255, 255, 255, 0); font-family: Museo; line-height: 20px"><b>edu</b></a>
-      <br>
-      <a href="https://mediaforensis.agency/#contact" class="w3-bar-item w3-button drop-shadow-3p" style="letter-spacing:1px; font-size:25px; color:rgba(255, 255, 255, 0); font-family: Museo; line-height: 20px"><b>contact</b></a>
+  <style>
+    body,
+    h1,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Times New Roman", serif;
+      font-size: 16px;
+      text-align: justify;
+    }
+  </style>
+
+  <body>
+
+    <!---------------------------------------------------- Navbar (sit on top) ------------------------------------>
+
+    <div class="w3-top">
+      <div class="w3-bar A-transparent-back w2-wide">
+        <a href="#home" class="w3-bar-item w3-button drop-shadow-3p"
+          style="letter-spacing:1px; font-size:90px; color:rgba(255, 255, 255, 0); font-family:robo; line-height: 90px">MF</a>
+        <!-- Float links to the right. Hide them on small screens -->
+        <div class="w3-right w3-hide-small">
+          <a href="#projects" class="w3-bar-item w3-button drop-shadow-3p shadow-title"
+            style="color:rgba(255, 255, 255, 0)"><b>Cases</b></a>
+          <a href="#projects" class="w3-bar-item w3-button drop-shadow-3p shadow-title"
+            style="color:rgba(255, 255, 255, 0)"><b>About</b></a>
+          <a href="#projects" class="w3-bar-item w3-button drop-shadow-3p shadow-title"
+            style="color:rgba(255, 255, 255, 0)"><b>Texts</b></a>
+          <a href="#projects" class="w3-bar-item w3-button drop-shadow-3p shadow-title"
+            style="color:rgba(255, 255, 255, 0)"><b>Education</b></a>
+          <a href="#projects" class="w3-bar-item w3-button drop-shadow-3p shadow-title"
+            style="color:rgba(255, 255, 255, 0)"><b>Contact </b></a>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
-<!------------------------------------------------------- Header image ------------------------------------------------------->
+    <!------------------------------------------------------- Header image ------------------------------------------------------->
 
-<!-- Page content -->
-<div class="w3-content w3-padding" style="max-width:1564px">
+    <!-- Page content -->
+    <div class="w3-content w3-padding" style="max-width:1564px">
 
-    <div class="w3-container">
+      <div class="w3-container">
         <h2 class="drop-shadow robo-font" style="color:#ffffff; font-size:90px; line-height: 90px">
-	<br>
-	NEW NEW NEW WORLD</h2>
-      <!--<p style="color:#ffffff; font-size:17px; font-family: SpaceGL">A research on computational worlding through machine (en)vision from a post-postcolonial perspective.</p> -->
-      <hr>
+          <br>
+          NEW NEW NEW WORLD
+        </h2>
+        <!--<p style="color:#ffffff; font-size:17px; font-family: SpaceGL">A research on computational worlding through machine (en)vision from a post-postcolonial perspective.</p> -->
+        <hr>
+      </div>
     </div>
-</div>
-	
-<!-------------------------------------------------------- Intro ------------------------------------------------------>
-	
-      <div class="w3-panel" style="margin: auto; width:700px">
-	      <p class= "body-paragraph"><i>New New New World (NNNW) is an artistic project of generative speculation, a transmedia ecosystem and a research by Arjan Guerrero from Media Forensis that investigates the practice of worldbuilding and the new insights that the BigGAN, Large Language Models or AIs in general add to the paradigm of images from a cognitive position that simultaneously intertwines image-world-objects-environment-language.</i></p>
-      </div>
-      <div class="w3-panel" style="margin: auto; width:700px">
-	      <p class= "body-paragraph">Excerpt from the curatorial text by Karla Noguez for the exhibition <i>New New New World</i> at Somers Gallery <a href="https://drive.google.com/drive/folders/1Mg5NxGcZ5VSV629v9hODsjCw33kLNX2x?usp=share_link">(Press kit)</a></p>
-      </div>
-      <div class="w3-panel" style="margin: auto; width:700px">
-	      <p class= "body-footnote"><i>New New New World</i> is a project supported by the Arte, Ciencia y Tecnologías (ACT) program (MX).<br><br><br></p>
-      </div>
 
-<!----------------------------------------------- slideshow --------------------------------------->
+    <!-------------------------------------------------------- Intro ------------------------------------------------------>
 
-<!--
+    <div class="w3-panel" style="margin: auto; width:700px">
+      <p class="body-paragraph"><i>New New New World (NNNW) is an artistic project of generative speculation, a
+          transmedia ecosystem and a research by Arjan Guerrero from Media Forensis that investigates the practice of
+          worldbuilding and the new insights that the BigGAN, Large Language Models or AIs in general add to the
+          paradigm of images from a cognitive position that simultaneously intertwines
+          image-world-objects-environment-language.</i></p>
+    </div>
+    <div class="w3-panel" style="margin: auto; width:700px">
+      <p class="body-paragraph">Excerpt from the curatorial text by Karla Noguez for the exhibition <i>New New New
+          World</i> at Somers Gallery <a
+          href="https://drive.google.com/drive/folders/1Mg5NxGcZ5VSV629v9hODsjCw33kLNX2x?usp=share_link">(Press kit)</a>
+      </p>
+    </div>
+    <div class="w3-panel" style="margin: auto; width:700px">
+      <p class="body-footnote"><i>New New New World</i> is a project supported by the Arte, Ciencia y Tecnologías (ACT)
+        program (MX).<br><br><br></p>
+    </div>
+
+    <!----------------------------------------------- slideshow --------------------------------------->
+
+    <!--
 <img src="NNNW/show/A world is an object is a world - 5.png" style="width:100%"> -->
 
-<div class="w3-content w3-display-container" style="width:100%">
-  <img class="mySlides" src="NNNW/show/NNNW_Collectibles - detail-6.png" style="width:100%">
-  <img class="mySlides" src="NNNW/show/NNNW_Collectibles - detail-4.png" style="width:100%">
-  <img class="mySlides" src="NNNW/show/general view - 5.png" style="width:100%">
-  <img class="mySlides" src="NNNW/show/NNNW_Walker - 1.png" style="width:100%">
-  <img class="mySlides" src="NNNW/show/Prompted Monsters - 1.png" style="width:100%">
-  <img class="mySlides" src="NNNW/show/Prompted Monsters - detail-2.png" style="width:100%">
-  <img class="mySlides" src="NNNW/show/Prompted Monsters - detail-1.png" style="width:100%">
-  <img class="mySlides" src="NNNW/show/Amaroid - 2.png" style="width:100%">
-  <img class="mySlides" src="NNNW/show/Amaroid - 3.png" style="width:100%">
-  <img class="mySlides" src="NNNW/show/Backpropagation - 2.png" style="width:100%">
-  <img class="mySlides" src="NNNW/show/Backpropagation - 5.png" style="width:100%">
-  <img class="mySlides" src="NNNW/show/A world is an object is a world - general-2.png" style="width:100%">
+    <div class="w3-content w3-display-container" style="width:100%">
+      <img class="mySlides" src="NNNW/show/NNNW_Collectibles - detail-6.png" style="width:100%">
+      <img class="mySlides" src="NNNW/show/NNNW_Collectibles - detail-4.png" style="width:100%">
+      <img class="mySlides" src="NNNW/show/general view - 5.png" style="width:100%">
+      <img class="mySlides" src="NNNW/show/NNNW_Walker - 1.png" style="width:100%">
+      <img class="mySlides" src="NNNW/show/Prompted Monsters - 1.png" style="width:100%">
+      <img class="mySlides" src="NNNW/show/Prompted Monsters - detail-2.png" style="width:100%">
+      <img class="mySlides" src="NNNW/show/Prompted Monsters - detail-1.png" style="width:100%">
+      <img class="mySlides" src="NNNW/show/Amaroid - 2.png" style="width:100%">
+      <img class="mySlides" src="NNNW/show/Amaroid - 3.png" style="width:100%">
+      <img class="mySlides" src="NNNW/show/Backpropagation - 2.png" style="width:100%">
+      <img class="mySlides" src="NNNW/show/Backpropagation - 5.png" style="width:100%">
+      <img class="mySlides" src="NNNW/show/A world is an object is a world - general-2.png" style="width:100%">
 
-  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-</div>
+      <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+    </div>
 
-<script>
-var slideIndex = 1;
-showDivs(slideIndex);
+    <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
 
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
+      function plusDivs(n) {
+        showDivs(slideIndex += n);
+      }
 
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "block";  
-}
-</script>
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = x.length }
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        x[slideIndex - 1].style.display = "block";
+      }
+    </script>
 
-<!----------------------------------------------------- TequAItquAI Art ---------------------------------------------------->
+    <!----------------------------------------------------- TequAItquAI Art ---------------------------------------------------->
 
-      <div class="w3-panel" style="margin: auto; width:700px">
-	      <p class= "body-paragraph"><br><i>TequAItquAI Art</i> <br>
-		      By Pita Arreola-Burns and Elliott Burns <br>
-		      (Text commissioned for the exhibition <i>New New New World</i> at Somers Gallery)
-	      </p>
+    <div class="w3-panel" style="margin: auto; width:700px">
+      <p class="body-paragraph"><br><i>TequAItquAI Art</i> <br>
+        By Pita Arreola-Burns and Elliott Burns <br>
+        (Text commissioned for the exhibition <i>New New New World</i> at Somers Gallery)
+      </p>
+    </div>
+    <div class="w3-panel" style="margin: auto; width:700px">
+      <p class="body-paragraph"><i>In the beginning, Command-Z Undo. Command-Shift-Z Redo. Everything was in suspense,
+          all motionless and empty in the expanse of heaven. Not yet a <del>man</del> person, nor an animal, birds,
+          fish, crabs, trees, stones, caves, ravines, grasses or forests. Only the sky existed. The face of the earth
+          had not yet appeared. Command-A Select All. Command-X Cut. Raging ocean that covered everything was engulfed
+          in total darkness. “Let there be light” – and light appeared. <del>He</del> They separated the light from the
+          darkness, and he they named the light ‘Day’ and the darkness ‘Night’. Command-S Save. File-name = ‘New
+          Layer’...</i></p>
+    </div>
+    <div class="w3-panel" style="margin: auto; width:700px">
+      <p class="body-paragraph"><a href="texts/TequAItquAI.html">Read full text<a /><br><br></p>
+    </div>
+
+    <!----------------------------------------------------- Amaroid video ---------------------------------------------------->
+
+    <div class="w3-padding-16" style="margin:auto; width:100%; max-width:100%;">
+      <div style="position: relative; padding-bottom: 56.25%; height: 0;">
+        <iframe title="vimeo-player" src="https://player.vimeo.com/video/559697843?h=cf0e33b5f4"
+          style="position: absolute; width: 100%; height: 100%;" frameborder="0" allowfullscreen></iframe>
       </div>
-      <div class="w3-panel" style="margin: auto; width:700px">
-	      <p class= "body-paragraph"><i>In the beginning, Command-Z Undo. Command-Shift-Z Redo. Everything was in suspense, all motionless and empty in the expanse of heaven. Not yet a <del>man</del> person, nor an animal, birds, fish, crabs, trees, stones, caves, ravines, grasses or forests. Only the sky existed. The face of the earth had not yet appeared. Command-A Select All. Command-X Cut. Raging ocean that covered everything was engulfed in total darkness. “Let there be light” – and light appeared. <del>He</del> They separated the light from the darkness, and he they named the light ‘Day’ and the darkness ‘Night’. Command-S Save. File-name = ‘New Layer’...</i></p>
+
+      <!----------------------------------------------------- Next project ---------------------------------------------------->
+
+      <div class="w3-right-align w3-container Museo-font">
+        <p style="color:#fff; font-size:25px"><a href="/project_Kirimonites.html">Next project ></a></p>
       </div>
-      <div class="w3-panel" style="margin: auto; width:700px">
-	      <p class= "body-paragraph"><a href="texts/TequAItquAI.html">Read full text<a/><br><br></p>
-      </div>
 
-<!----------------------------------------------------- Amaroid video ---------------------------------------------------->
-	
-<div class="w3-padding-16" style="margin:auto; width:100%; max-width:100%;">
-    <div style="position: relative; padding-bottom: 56.25%; height: 0;">
-        <iframe title="vimeo-player" src="https://player.vimeo.com/video/559697843?h=cf0e33b5f4" style="position: absolute; width: 100%; height: 100%;" frameborder="0" allowfullscreen></iframe>
-</div>
 
-<!----------------------------------------------------- Next project ---------------------------------------------------->
+  </body>
 
-<div class="w3-right-align w3-container Museo-font">
-	<p style="color:#fff; font-size:25px"><a href="/project_Kirimonites.html">Next project ></a></p>
-</div>
-
-   
-</body>
 </html>
