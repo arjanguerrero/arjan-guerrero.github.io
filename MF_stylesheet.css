@@ -412,7 +412,8 @@ h3 {
   letter-spacing: 4px
 }
 
-/* Arjan classes */
+/********************************************** Arjan classes *********************************************************************/
+
 .segoe-font {
   font-family: "Segoe UI", Arial, sans-serif;
   font-weight: 400;
@@ -603,6 +604,12 @@ h3 {
   font-family: NeutralIta;
   font-size: 25px;
   letter-spacing: 1px;
+}
+
+.upper-menu {
+  color: rgb(0, 0, 0, 0);
+  font-family: NeutralIta;
+  font-size: 15px;
 }
 
 .A-center {
@@ -1859,8 +1866,10 @@ a {
 }
 
 .w3-button:hover {
+  /* color: #5a5a5a !important; */
   color: #000 !important;
-  background-color: #ccc !important
+  /*text-shadow: 5px 5px 3px #b5b5b5;*/
+  /*background-color: #fff !important*/
 }
 
 .w3-transparent,
