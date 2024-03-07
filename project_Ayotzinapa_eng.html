@@ -197,6 +197,7 @@
     <!------------------------------------------------------ Nivel de Confianza -->
 
     <div class="w3-panel" style="margin: auto; width:700px">
+      <br>
       <p class="subtitle-medium">Level of Confidence</p>
       <p class="body-paragraph">When the portraits of the disappeared students
         arrived to the museum, we opened a second path of investigation, <i>Level of Confidence</i>, a video that
@@ -219,16 +220,43 @@
         one of the 43 printed portraits was assosiated with its digital version –dictaminating a correspondence level
         (a “confidence” level) of only 20% and giving as result the phrase: “student not found”.
       </p>
+      <br>
+      <br>
     </div>
 
-    <div class="w3-padding-16 w3-center">
-      <iframe src="https://player.vimeo.com/video/140451790" width="640" height="360" frameborder="0"
-        allow="autoplay; fullscreen" allowfullscreen></iframe>
+    <div class="w3-content w3-display-container">
+      <img class="mySlidessss" src="/Ayotzi/Nivel-de-confianza-still-1.png" style="width:100%">
+      <img class="mySlidessss" src="/Ayotzi/Nivel-de-confianza-still-2.png" style="width:100%">
+
+      <button class="w3-button w3-black w3-display-left" onclick="plusDivssss(-1)">&#10094;</button>
+      <button class="w3-button w3-black w3-display-right" onclick="plusDivssss(1)">&#10095;</button>
     </div>
+
+    <script>
+      var slideIndexxxx = 1;
+      showDivssss(slideIndexxxx);
+
+      function plusDivssss(n) {
+        showDivssss(slideIndexxxx += n);
+      }
+
+      function showDivssss(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlidessss");
+        if (n > x.length) { slideIndexxxx = 1 }
+        if (n < 1) { slideIndexxxx = x.length }
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        x[slideIndexxxx - 1].style.display = "block";
+      }
+    </script>
 
     <!------------------------------------------------------ Crimen de Casa Maauad -->
 
     <div class="w3-panel" style="margin: auto; width:700px">
+      <br>
+      <br>
       <p class="subtitle-medium">Casa Maauad Crime</p>
       <p class="body-paragraph">Afterwards, we became aware of an investigation by
         Anabel Hernández and Steve Fischer saying that the presumed material authors of Ayotzinapa crime were actually
@@ -242,13 +270,20 @@
       <p class="body-paragraph">This reenacment was made and exhibited at Casa
         Maauad (2016).
       </p>
-      <div class="w3-padding-16 w3-center">
-        <iframe src="https://player.vimeo.com/video/154003115" width="640" height="360" frameborder="0"
-          allow="autoplay; fullscreen" allowfullscreen></iframe>
+      <br>
+
+      <div class="w3-panel" style="margin: auto; width:700px">
+        <img src="/Ayotzi/CCM-still-2.jpg" style="width:100%">
+        <p class="body-footnote">Still from the video (watch <a
+            href="https://drive.google.com/file/d/1sMRwyJmUUJe-u5ZXIkeGLzOFggPAflUT/view?usp=share_link">here)</a>
+        </p>
+        <br>
       </div>
-      <img src="/Ayotzi/Ayotzi_img - CCMinstall.jpg" class="w3-padding-16 A-center" style="width:65%">
-      <div class="w3-panel" style="margin: auto; width:505px">
+
+      <div class="w3-panel" style="margin: auto; width:700px">
+        <img src="/Ayotzi/Ayotzi_img - CCMinstall.jpg" style="width:100%">
         <p class="body-footnote">View of the exhibition at Casa Maauad, 2016</p>
+        <br>
       </div>
     </div>
 
@@ -335,27 +370,47 @@
 
     <!------------------------------------------------------ Artist talk -->
 
-    <div class="w3-panel" style="margin: auto; width:700px">
+    <div class="w3-panel" style="margin: auto; width:700px" id="talk">
       <p class="subtitle-medium">Artist talk: Mauricio Ortega Valerio’s medical-forensic report</p>
       <p class="body-paragraph">The <i>Medical-forensic report</i> has been adapted
         to be presented as an artist talk in institutions like the Centro de la Imagen and the Contemporary Art
         University Museum (MUAC). The video documentation of its presentation at MUAC, was edited in order to extend
         to it our considerations about images.
       </p>
-      <div class="w3-padding-32 w3-center">
-        <iframe src="https://player.vimeo.com/video/197141778" width="640" height="360" frameborder="0"
-          allow="autoplay; fullscreen" allowfullscreen></iframe>
-      </div>
-      <div class="w3-panel" style="margin: auto; width:500px">
-        <p class="body-footnote">5-minute excerpt with english subtitles</p>
-      </div>
-      <div class="w3-padding-32 w3-center">
-        <iframe src="https://player.vimeo.com/video/189880343" width="640" height="360" frameborder="0"
-          allow="autoplay; fullscreen" allowfullscreen></iframe>
-      </div>
-      <div class="w3-panel" style="margin: auto; width:500px">
-        <p class="body-footnote">Full talk</p>
-      </div>
+      <br>
+    </div>
+
+    <div class="video-container">
+      <video controls width="640" height="360">
+        <source src="/videos/Ayotzinapa/MOV-artist-talk-low.mp4" type="video/mp4">
+        Your browser does not support this video player <!--does not support the video tag-->
+      </video>
+    </div>
+
+    <div class="w3-panel" style="margin: auto; width:700px">
+      <p class="body-footnote">Video-documentation excerpt</p>
+      <br>
+    </div>
+
+    <div class="w3-panel" style="margin: auto; width:700px">
+      <p class="body-footnote">Credits:
+        <br><br>
+        The visual analysis of Mauricio_Ortega_Valerio.jpg was
+        developed in collaboration with Emilio Gómez, criminalist, criminologist and professor of the Bachelor of
+        Forensic Sciences at Universidad Nacional Autónoma de México (UNAM), and Ricardo García Toríz, specialist in
+        Legal and Forensic Medicine.
+        <br><br>
+        Adapted versions of the <i>Medical-forensic report of
+          Mauricio_Ortega_Valerio.jpg</i> were presented as artist talks at the Museo
+        Universitario Arte Contemporáneo (MUAC) in October 2016 <a href="#footnotes">[1]</a> and at the Centro de la
+        Imagen in December 2017 <a href="#footnotes">[2]</a>.
+        <br><br>
+        <i>Medical-forensic report of
+          Mauricio_Ortega_Valerio.jpg</i> was first published in the book ‘Medios Múltiples V' <a
+          href="#footnotes">[3]</a>.
+        <br>
+        <br>
+      </p>
     </div>
 
     <!--
