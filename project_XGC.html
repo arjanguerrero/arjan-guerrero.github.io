@@ -53,16 +53,76 @@
       </h2>
       <p class="body-paragraph">2088. A failed attempt at communicating with Kyo
         the photocopier through its own written language.</p>
-      <hr>
       <!--
       <p class="body-paragraph"><a href="/project_XGC_esp.html">Español</a></p>
       -->
+      <div class="w3-container">
+        <p><br></p>
+      </div>
     </div>
 
+    <!----------------------------------------------- Exhibition at CENART ------------------------------------->
+
+    <!--
+    <div class="w3-container w3-padding-32" id="exhibit">
+      <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 Neutral-font" style="color:#000; font-size: 25px">
+        Exhibition at the Centro Nacional de las Artes, Mexico City</h3>
+    </div>
+    -->
+
+    <div class="w3-content w3-display-container">
+      <img class="mySlides" src="/XGC/XGC_img - ss1.jpg" style="width:100%">
+      <img class="mySlides" src="/XGC/XGC_img - ss2.jpg" style="width:100%">
+      <img class="mySlides" src="/XGC/XGC_img - ss3.jpg" style="width:100%">
+      <img class="mySlides" src="/XGC/XGC_img - ss4.jpg" style="width:100%">
+      <img class="mySlides" src="/XGC/XGC_img - ss5.jpg" style="width:100%">
+      <img class="mySlides" src="/XGC/XGC_img - ss6.jpg" style="width:100%">
+      <img class="mySlides" src="/XGC/XGC_img - ss7.jpg" style="width:100%">
+      <img class="mySlides" src="/XGC/XGC_img - ss8.jpg" style="width:100%">
+      <img class="mySlides" src="/XGC/XGC_img - ss9.jpg" style="width:100%">
+
+      <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+
+    <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+
+      function plusDivs(n) {
+        showDivs(slideIndex += n);
+      }
+
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = x.length }
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        x[slideIndex - 1].style.display = "block";
+      }
+    </script>
+
+    <div class="w3-panel" style="margin: auto; width:700px">
+      <p class="body-footnote">Install views of Xerogrammar Case at Centro Nacional de las Artes, MX <br>(PAPIAM
+        exhibition, 2018)<br><br>
+      </p>
+    </div>
+
+    <!----------------------------------------------- Research ------------------------------------------------>
+
+    <div class="w3-panel" style="margin: auto; width:700px">
+      <p class="title-medium">Research</p>
+    </div>
+
+    <!--
     <div class="w3-padding-16 w3-center">
       <iframe title="vimeo-player" src="https://player.vimeo.com/video/322927233" width="640" height="360"
         frameborder="0" allowfullscreen></iframe>
     </div>
+    -->
 
     <div class="w3-panel" style="margin: auto; width:700px">
       <p class="body-paragraph">In this late XXI century and within a full Age of
@@ -76,12 +136,6 @@
         Based Iterative Reproduction: we gave it an open blank book from which it made a "copy" – this first output
         was then turned into the following input (the “copy” was “copied”) and this process repeated so that every new
         output became the new input for a series of more than 300 reproductions from which a written text emerged.</p>
-
-      <div class="w3-padding-16 w3-center">
-        <iframe title="vimeo-player" src="https://player.vimeo.com/video/296971334" width="640" height="414"
-          frameborder="0" allowfullscreen></iframe>
-      </div>
-
       <p class="body-paragraph">The research had the purpose of extracting a
         grammar from the written text using computer vision and artificial intelligence. A kNN algorithm for pattern
         recognition idetified 31 grapheme groups and classified them according to their visual attributes. Up to the
@@ -95,6 +149,15 @@
     <img src="/XGC/XGC_img - analisis.png" class="w3-image" style="width:100%">
   </div>
 
+  <div class="w3-panel"></div>
+
+  <div class="video-container">
+    <video controls width="640" height="360">
+      <source src="/videos/XGC/XGC-comp-analysis.mp4" type="video/mp4">
+      Your browser does not support this video player <!--does not support the video tag-->
+    </video>
+  </div>
+
   <div class="w3-content w3-padding" style="max-width:1500px">
 
     <div class="w3-panel" style="margin: auto; width:700px">
@@ -102,7 +165,7 @@
         (or "cells", as we called them) and a logical set of relationships between them (the grammar), we were able to
         generate them. With the purpose of starting a conversation with Kyo, we managed to ask in what we think is its
         own written language:<br><br></p>
-      <p class="body-paragraph" style="font-size:25px; text-indent:200px">"Kyo, do you copy?"</p>
+      <p class="body-paragraph" style="font-size:15px; text-indent:260px">"Kyo, do you copy?"</p>
       <img src="/XGC/XGC_img - Kdyc_alfa-cut.png" style="width:100%">
       <p class="body-paragraph">The question was subjected to the Inner-Input Based
         Iterative Reproduction and we took the result as Kyo's first answer:</p>
@@ -143,12 +206,24 @@
         </i>
       </p>
 
+      <div class="video-container">
+        <video controls width="640" height="360">
+          <source src="/videos/XGC/Kyos-answer.mp4" type="video/mp4">
+          Your browser does not support this video player <!--does not support the video tag-->
+        </video>
+      </div>
+
       <p class="body-paragraph"><br>This xerolinguistic
         investigation has been published by Media Forensis in several formats, from art shows to lectures to a
         collectible output: the Xerogrammar Case Box.<br><br><br></p>
     </div>
 
-    <!-- Links -->
+    <!----------------------------------------------- Outputs ------------------------------------------------>
+
+    <div class="w3-panel" style="margin: auto; width:700px">
+      <p class="title-medium">Outputs</p>
+    </div>
+
     <div class="w3-row-padding w3-grayscale A-center2">
       <div class="w3-col l2 m6 w3-margin-bottom">
         <a href="#exhibit">
@@ -187,51 +262,7 @@
   </div>
   </div>
 
-  <!-- Exhibition at CENART -->
-  <div class="w3-container w3-padding-32" id="exhibit">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 Neutral-font" style="color:#000; font-size: 25px">
-      Exhibition at the Centro Nacional de las Artes, Mexico City</h3>
-  </div>
-
-  <div class="w3-panel" style="margin: auto; width:700px">
-    <p class="body-paragraph">Install views of Xerogrammar Case at CENART, MX <br>(PAPIAM exhibition, 2018)<br><br></p>
-  </div>
-
-  <div class="w3-content w3-display-container">
-    <img class="mySlides" src="/XGC/XGC_img - ss1.jpg" style="width:100%">
-    <img class="mySlides" src="/XGC/XGC_img - ss2.jpg" style="width:100%">
-    <img class="mySlides" src="/XGC/XGC_img - ss3.jpg" style="width:100%">
-    <img class="mySlides" src="/XGC/XGC_img - ss4.jpg" style="width:100%">
-    <img class="mySlides" src="/XGC/XGC_img - ss5.jpg" style="width:100%">
-    <img class="mySlides" src="/XGC/XGC_img - ss6.jpg" style="width:100%">
-    <img class="mySlides" src="/XGC/XGC_img - ss7.jpg" style="width:100%">
-    <img class="mySlides" src="/XGC/XGC_img - ss8.jpg" style="width:100%">
-    <img class="mySlides" src="/XGC/XGC_img - ss9.jpg" style="width:100%">
-
-    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-  </div>
-
-  <script>
-    var slideIndex = 1;
-    showDivs(slideIndex);
-
-    function plusDivs(n) {
-      showDivs(slideIndex += n);
-    }
-
-    function showDivs(n) {
-      var i;
-      var x = document.getElementsByClassName("mySlides");
-      if (n > x.length) { slideIndex = 1 }
-      if (n < 1) { slideIndex = x.length }
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-      }
-      x[slideIndex - 1].style.display = "block";
-    }
-  </script>
-
+  <!--
   <div class="w3-padding-64 w3-center">
     <iframe src="https://player.vimeo.com/video/236439754" width="640" height="414" frameborder="0"
       allow="autoplay; fullscreen" allowfullscreen></iframe>
@@ -241,11 +272,13 @@
     <iframe src="https://player.vimeo.com/video/236295035" width="640" height="414" frameborder="0"
       allow="autoplay; fullscreen" allowfullscreen></iframe>
   </div>
+  -->
+  <div class="w3-panel"></div>
 
-  <!-- Research Logbook -->
-  <div class="w3-container w3-padding-32" id="diary">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 Neutral-font" style="color:#000; font-size: 25px">
-      Xerolinguistics of the Technological Disconnection (Research logbook)</h3>
+  <!----------------------------------------------- Logbook ------------------------------------------------>
+
+  <div class="w3-panel" style="margin: auto; width:700px">
+    <p class="title-medium">Research logbook: Xerolinguistics of the Technological Disconnection</p>
   </div>
 
   <div class="w3-content w3-padding Museo-font" style="max-width:1500px">
@@ -257,7 +290,7 @@
         approach (cognitive science), the philosophical strain (speculative realism), as well as the non-comparable
         artistic modes (the pre-duchampian “retinal” and the “conceptual” post-duchampian) that gave a framework to
         the research.</p>
-      <p class="body-paragraph"><a href="/texts/txt_xeroling_eng.html">Read full text</a><br></p>
+      <p class="body-paragraph"><a href="/texts/txt_xeroling_eng.html">Read full text</a><br><br></p>
       <img src="/XGC/XGC_img - RD-1.png" style="width:100%">
       <p class="body-footnote"><br>Credits:<br><br>Emmanuel Anguiano-Hernandez,
         programming<br>Ika Atl, production assistant<br>Oliver Davidson Vejar, linguistics consultant<br>Yazmín
