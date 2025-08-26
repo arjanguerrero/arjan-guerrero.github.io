@@ -513,11 +513,27 @@ h3 {
   font-family: NeutralM
 }
 
+.section-border {
+    border-bottom: 1px solid black;
+}
+
 .XGC-par {
   font-size: 18px;
   line-height: 22px;
   font-family: 'Share Tech Mono', monospace;
   color: #fff
+}
+
+.title-thumb {
+    color: #000000;
+    font-family: NeutralIta;
+    font-size: 20px;
+}
+
+.title-main {
+    color: #000000;
+    font-family: NeutralIta;
+    font-size: 66px;
 }
 
 .title-medium {
@@ -543,7 +559,7 @@ h3 {
 
 .body-paragraph {
   color: #000000;
-  max-width: 650px;
+  max-width: 700px;
   font-family: Body;
   font-size: 15px;
 }
