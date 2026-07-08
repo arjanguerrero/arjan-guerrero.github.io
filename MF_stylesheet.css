@@ -2462,3 +2462,116 @@ a {
 .w3-hover-border-pale-blue:hover {
   border-color: #e7ffff !important
 }
+
+/********************************************** Responsive overrides *********************************************************************/
+
+@media (max-width: 700px) {
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  .w3-content {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  .w3-container,
+  .w3-panel {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  img,
+  video,
+  iframe {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  .title-main {
+    font-size: 42px;
+    line-height: 48px;
+    margin-top: 72px !important;
+    overflow-wrap: break-word;
+  }
+
+  h2 {
+    font-size: 34px;
+    line-height: 40px;
+    overflow-wrap: break-word;
+  }
+
+  .title-medium,
+  .title-medium-w,
+  .body-paragraph,
+  .body-text,
+  .body-footnote,
+  .body-reference,
+  .body-bold,
+  .body-italic {
+    max-width: 100% !important;
+    overflow-wrap: break-word;
+  }
+
+  .w3-top .w3-bar>a:first-child {
+    font-size: 64px !important;
+    line-height: 64px !important;
+    padding-left: 10px !important;
+  }
+
+  .w3-top .w3-right.w3-hide-small {
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    max-width: calc(100% - 90px);
+    padding-top: 4px;
+  }
+
+  .w3-top .upper-menu {
+    font-size: 13px;
+    line-height: 16px;
+    padding: 6px 8px !important;
+  }
+
+  .w3-half,
+  .w3-third,
+  .w3-twothird,
+  .w3-threequarter,
+  .w3-quarter {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 420px) {
+
+  .w3-content {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+
+  .title-main {
+    font-size: 34px;
+    line-height: 40px;
+    margin-top: 64px !important;
+  }
+
+  .w3-top .w3-bar>a:first-child {
+    font-size: 54px !important;
+    line-height: 54px !important;
+  }
+
+  .w3-top .w3-right.w3-hide-small {
+    max-width: calc(100% - 76px);
+  }
+
+  .w3-top .upper-menu {
+    font-size: 12px;
+    padding: 5px 6px !important;
+  }
+}
