@@ -691,10 +691,26 @@ h3 {
 }
 
 .upper-menu {
-  color: rgb(0, 0, 0, 0);
+  background: #1c1c1c;
+  border-radius: 999px;
+  color: #ffffff;
   font-family: Neutral;
   font-weight: 400;
   font-size: 15px;
+  line-height: 15px;
+  margin-left: 12px;
+  padding: 5px 10px 6px 10px !important;
+  text-decoration: none;
+}
+
+.upper-menu b {
+  font-weight: 400;
+}
+
+.w3-top .w3-right {
+  display: flex;
+  align-items: center;
+  padding: 14px 22px 0 0;
 }
 
 .A-center {
@@ -2574,4 +2590,46 @@ a {
     font-size: 12px;
     padding: 5px 6px !important;
   }
+}
+
+/********************************************** Navbar pill override *********************************************************************/
+
+.w3-top .upper-menu {
+  background: #1c1c1c !important;
+  border-radius: 999px;
+  color: #ffffff !important;
+  font-family: Neutral;
+  font-weight: 400;
+  line-height: 15px;
+  margin-left: 12px;
+  padding: 5px 10px 6px 10px !important;
+  text-decoration: none;
+}
+
+.w3-top .upper-menu b {
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.thumb-pill-test {
+  aspect-ratio: 16 / 9;
+  border: 2px solid #000000;
+  border-radius: 999px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.project-title-pill {
+  background: transparent;
+  border: 2px solid #000000;
+  border-radius: 999px;
+  color: #000000;
+  display: inline-block;
+  font-family: Neutral;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 15px;
+  margin-top: 14px;
+  padding: 5px 10px 6px 10px;
+  text-decoration: none;
 }
