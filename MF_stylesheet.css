@@ -327,6 +327,62 @@ textarea {
   font-family: Title;
 }
 
+@font-face {
+  src: url(fonts/CabinetGrotesk-Thin.otf);
+  font-family: CabinetGrotesk;
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  src: url(fonts/CabinetGrotesk-Extralight.otf);
+  font-family: CabinetGrotesk;
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  src: url(fonts/CabinetGrotesk-Light.otf);
+  font-family: CabinetGrotesk;
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  src: url(fonts/CabinetGrotesk-Regular.otf);
+  font-family: CabinetGrotesk;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  src: url(fonts/CabinetGrotesk-Medium.otf);
+  font-family: CabinetGrotesk;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  src: url(fonts/CabinetGrotesk-Bold.otf);
+  font-family: CabinetGrotesk;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  src: url(fonts/CabinetGrotesk-Extrabold.otf);
+  font-family: CabinetGrotesk;
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  src: url(fonts/CabinetGrotesk-Black.otf);
+  font-family: CabinetGrotesk;
+  font-weight: 900;
+  font-style: normal;
+}
+
 html,
 body {
   font-family: Verdana, sans-serif;
@@ -412,7 +468,7 @@ h3 {
   letter-spacing: 4px
 }
 
-/********************************************** Arjan classes *********************************************************************/
+/********************************************** Arjan's classes *********************************************************************/
 
 .segoe-font {
   font-family: "Segoe UI", Arial, sans-serif;
@@ -511,6 +567,10 @@ h3 {
 
 .Title-font {
   font-family: NeutralM
+}
+
+.CabinetGrotesk-font {
+  font-family: CabinetGrotesk
 }
 
 .section-border {
@@ -622,9 +682,18 @@ h3 {
   letter-spacing: 1px;
 }
 
+.shadow-titleR {
+  color: rgba(0, 0, 0, 0);
+  font-family: Neutral;
+  font-weight: 400;
+  font-size: 25px;
+  letter-spacing: 1px;
+}
+
 .upper-menu {
   color: rgb(0, 0, 0, 0);
-  font-family: NeutralIta;
+  font-family: Neutral;
+  font-weight: 400;
   font-size: 15px;
 }
 
