@@ -3,7 +3,7 @@
 <title>Media Forensis</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="/MF_stylesheet.css?v=20260708-projecttitlepills">
+<link rel="stylesheet" href="/MF_stylesheet.css?v=20260708-projecttitlepills2">
 
 <body style="background-image: linear-gradient(rgba(156,158,166,1), rgba(255,255,255,1))">
 
@@ -16,12 +16,15 @@
       
     <!-- Float links to the right. Hide them on small screens -->
       <div class="w3-right w3-hide-small">
+
         <a href="#projects" class="w3-bar-item w3-button upper-menu"><b>Projects</b></a>
-        <a href="#about" class="w3-bar-item w3-button upper-menu"><b>About</b></a>
+
         <a href="#texts" class="w3-bar-item w3-button upper-menu"><b>Writing</b></a>
-        <a href="#edu" class="w3-bar-item w3-button upper-menu"><b>Education</b></a>
-        <a href="#contact" class="w3-bar-item w3-button upper-menu"><b>Contact </b></a>
-      </div>
+
+        <a href="/edu/mmediales.html" class="w3-bar-item w3-button upper-menu"><b>Education</b></a>
+
+        <a href="#about" class="w3-bar-item w3-button upper-menu"><b>About</b></a>
+</div>
     </div>
   </div>
 
@@ -112,8 +115,14 @@
             <span class="body-bold">Founder</span><br><a href="/profile/arjan.html">Arjan Guerrero</a>
         </p>
         <p class="body-paragraph">
-            <span class="body-bold">Director of Education</span><br>María Torres
+            <span class="body-bold">Director of Education</span><br><a href="/profile/maria.html">María Torres</a>
         </p>
+        <p class="body-paragraph" style="margin-top:37px">
+            <button type="button" class="w3-button standalone-menu-pill" id="about-contact-toggle"><b>Contact</b></button>
+        </p>
+        <div class="contact-details" id="about-contact-details">
+            <p class="body-paragraph">arjan.guerrero@gmail.com</p>
+        </div>
     </div>
 
         <!-------------------------------------------------------------------- Texts -------------------------------------------------------------------->
@@ -153,49 +162,22 @@
             </div>
 
             <!-------------------------------------------------------------------- Edu -------------------------------------------------------------------->
-
-            <div class="w3-panel" id="edu">
-                <pr>
-                    <br>
-                    <br>
-                    <br>
-                </pr>
-            </div>
-
-            <!--<div class="w3-container">-->
-                <div class="w3-panel" style="margin: auto; width:700px">
-                    <h3 class="drop-shadow-3p shadow-titleR">Education</h3>
-                    <p style="color:#000000; font-family: Title; font-size: 15px">
-                        <a href="/edu/mmediales.html">
-                            Materias
-                            Mediales
-                        </a><br><span class="body-paragraph">María Torres + Arjan Guerrero (Coordinators)</span>
-                    </p>
-                </div>
-
-                <!-------------------------------------------------------------------- Contact -------------------------------------------------------------------->
-
-                <div class="w3-panel" id="contact">
-                    <pr>
-                        <br>
-                        <br>
-                        <br>
-                    </pr>
-                </div>
-
-                <!--<div class="w3-container">-->
-                    <div class="w3-panel" style="margin: auto; width:700px">
-                        <h3 class="drop-shadow-3p shadow-titleR">Contact</h3>
-                        <p class="body-paragraph">
-                            arjan.guerrero@gmail.com
-                            <br><br><br><br><br>
-                        </p>
-                    </div>
-
-                    <!-- <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 drop-shadow Museo-font"  style="color:rgba(255, 255, 255, 0); font-size:70px">contact</h3> -->
                     <!-- End page content -->
                 </div>
   </div>
+
+<script>
+    document.getElementById("about-contact-toggle").addEventListener("click", function () {
+        const details = document.getElementById("about-contact-details");
+        details.classList.toggle("is-visible");
+        this.classList.toggle("is-active", details.classList.contains("is-visible"));
+        if (details.classList.contains("is-visible")) {
+            setTimeout(function () {
+                details.scrollIntoView({ behavior: "smooth", block: "nearest" });
+            }, 120);
+        }
+    });
+</script>
 
 </body>
 
