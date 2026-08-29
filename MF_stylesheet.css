@@ -2558,7 +2558,7 @@ a {
   }
 
   .hero-logo-lockup {
-    top: calc(50% + clamp(52px, 15vw, 64px));
+    top: calc(50% + clamp(118px, 33vw, 138px));
   }
 
   .w3-content {
