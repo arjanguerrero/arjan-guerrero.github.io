@@ -2557,6 +2557,10 @@ a {
     overflow-x: hidden;
   }
 
+  .hero-logo-lockup {
+    top: calc(50% + clamp(52px, 15vw, 64px));
+  }
+
   .w3-content {
     width: 100% !important;
     max-width: 100% !important;
