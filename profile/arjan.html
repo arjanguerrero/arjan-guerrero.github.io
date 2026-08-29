@@ -4,7 +4,7 @@
 <title>MF</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="/MF_stylesheet.css?v=20260708-projecttitlepills2">
+<link rel="stylesheet" href="/MF_stylesheet.css?v=20260828-robo-links-row">
 
 <body style="background-image: linear-gradient(rgba(255,255,255,1), rgba(255,255,255,1))">
 	<style>
@@ -74,21 +74,25 @@
 			<p class="body-text">Holder of an MFA in Computational Arts from Goldsmiths, University of London, he is a
 				Visiting Lecturer at the Winchester School of Art. Since 2021, he co-directs <a href="https://www.instagram.com/materiasmediales/" target="_blank"
    rel="noopener noreferrer">Materias Mediales</a>, an
-				inter-independent program he co-directs bringing together practicing creatives and researchers in
+				educational programme on artistic research that brings together practising creatives and researchers in
 				collaboration with varying institutions.
 			</p>
-			<p class="body-text"><a
+			<p class="body-text robo-style robo-links-row"><a
 					href="https://drive.google.com/drive/folders/1hcFPwhVtZAMPrkwM1zHqmu2rU8-yMYf5?usp=sharing"
-					target="_blank" rel="noopener noreferrer">→ CV</a>
+					class="robo-pill" target="_blank" rel="noopener noreferrer">CV</a>
+				<span class="robo-links-group">Portfolios
+					<a href="https://drive.google.com/drive/folders/1njcGlGkI6SL_W_qVC2Snb1eef3RaTdyE?usp=sharing"
+						class="robo-pill" target="_blank" rel="noopener noreferrer">artist</a>
+					<a href="https://drive.google.com/drive/folders/1ISe0dgOM3oZZs1jFgilMWwdfP4RmccOu?usp=sharing"
+						class="robo-pill" target="_blank" rel="noopener noreferrer">creative technologist</a>
+				</span>
 			</p>
-			<p class="body-text"><a
-					href="https://drive.google.com/drive/folders/1njcGlGkI6SL_W_qVC2Snb1eef3RaTdyE?usp=sharing"
-					target="_blank" rel="noopener noreferrer">→ Portfolio (artist)</a>
+			<p class="body-text" style="margin-top:37px">
+				<button type="button" class="w3-button standalone-menu-pill" id="contact-toggle"><b>Contact</b></button>
 			</p>
-			<p class="body-text"><a
-					href="https://drive.google.com/drive/folders/1ISe0dgOM3oZZs1jFgilMWwdfP4RmccOu?usp=sharing"
-					target="_blank" rel="noopener noreferrer">→ Portfolio (creative technologist)</a>
-			</p>
+			<div class="contact-details" id="contact-details">
+				<p class="body-text">arjan.guerrero@gmail.com</p>
+			</div>
 		</div>
 
 		<div class="w3-panel" style="margin: auto; width:700px">
@@ -97,12 +101,25 @@
 
 		<div class="w3-panel" style="margin: auto; width:700px">
 			<p class="body-text">2027 - Co-directing the programme Materias Mediales at the University of Oaxaca.</p>
-			<p class="body-text">2026 - Teaching two modules at the BSc Creative Computing, Winchester School of Art.</p>
+			<p class="body-text">2026-27 - Teaching at the BSc Creative Computing and MA Digital Media, Winchester School of Art.</p>
 			<p class="body-text">2026 - Exhibited in the group show ‘Opening the Black Box’ at Aparaaditehas (Tartu,
 				Estonia).</p>
 		</div>
 
 	</div>
+
+	<script>
+		document.getElementById("contact-toggle").addEventListener("click", function () {
+			const details = document.getElementById("contact-details");
+			details.classList.toggle("is-visible");
+			this.classList.toggle("is-active", details.classList.contains("is-visible"));
+			if (details.classList.contains("is-visible")) {
+				setTimeout(function () {
+					details.scrollIntoView({ behavior: "smooth", block: "nearest" });
+				}, 120);
+			}
+		});
+	</script>
 
 </body>
 

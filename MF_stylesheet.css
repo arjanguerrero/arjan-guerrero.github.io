@@ -631,6 +631,43 @@ h3 {
   font-size: 15px;
 }
 
+.robo-style {
+  color: #777777;
+  font-family: RobotoR, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.robo-links-row {
+  align-items: center;
+  column-gap: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 8px;
+}
+
+.robo-links-group {
+  align-items: center;
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.robo-pill {
+  align-items: center;
+  border: 1.5px solid #777777;
+  border-radius: 999px;
+  box-sizing: border-box;
+  display: inline-flex;
+  justify-content: center;
+  line-height: 1;
+  min-height: 24px;
+  padding: 0 7px;
+  text-decoration: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
 .body-footnote {
   color: #000000;
   max-width: 650px;
@@ -684,9 +721,9 @@ h3 {
 
 .shadow-titleR {
   color: rgba(0, 0, 0, 0);
-  font-family: Neutral;
+  font-family: CabinetGrotesk;
   font-weight: 400;
-  font-size: 25px;
+  font-size: 27px;
   letter-spacing: 1px;
 }
 
@@ -738,6 +775,38 @@ h3 {
 .drop-shadow-H {
   text-shadow: 15px 15px 3px #000;
   opacity: 0.3;
+}
+
+.hero-logo-lockup {
+  align-items: center;
+  display: flex;
+  gap: clamp(10px, 1.8vw, 28px);
+  justify-content: center;
+  max-width: calc(100vw - 32px);
+  white-space: nowrap;
+}
+
+.hero-logo-mark {
+  color: #ffffff;
+  flex: 0 0 auto;
+  font-family: robo;
+  font-size: clamp(50px, 9vw, 140px);
+  letter-spacing: 1px;
+  line-height: 1;
+  opacity: 1;
+  text-shadow: 7.5px 7.5px 3px rgba(0, 0, 0, 0.4);
+}
+
+.hero-logo-name {
+  background: #ffffff;
+  color: #000000;
+  flex: 0 0 auto;
+  font-family: CabinetGrotesk;
+  font-size: clamp(20px, 4.3vw, 64px);
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.05;
+  padding: clamp(8px, 1.1vw, 16px) clamp(10px, 1.4vw, 21px);
 }
 
 .black-and-white {
@@ -2547,6 +2616,7 @@ a {
     justify-content: flex-end;
     max-width: calc(100% - 90px);
     padding-top: 4px;
+    row-gap: 8px;
   }
 
   .w3-top .upper-menu {
@@ -2598,12 +2668,15 @@ a {
   background: #1c1c1c !important;
   border-radius: 999px;
   color: #ffffff !important;
+  flex: 0 0 auto;
   font-family: Neutral;
+  font-size: 15px;
   font-weight: 400;
   line-height: 15px;
   margin-left: 12px;
   padding: 5px 10px 6px 10px !important;
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .w3-top .upper-menu b {
@@ -2671,5 +2744,9 @@ a {
   line-height: 15px;
   margin-top: 14px;
   padding: 5px 10px 6px 10px;
+  text-decoration: none;
+}
+
+.project-title-pill a {
   text-decoration: none;
 }
