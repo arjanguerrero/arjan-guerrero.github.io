@@ -1,0 +1,103 @@
+::selection {
+  background: #777777;
+  color: #ffffff;
+}
+
+::-moz-selection {
+  background: #777777;
+  color: #ffffff;
+}
+
+.mobile-menu-toggle {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .w3-top .mobile-menu-toggle {
+    align-items: center;
+    background: #1c1c1c !important;
+    border: 2px solid transparent;
+    border-radius: 999px;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: Neutral, Arial, sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    height: 44px;
+    justify-content: center;
+    line-height: 1;
+    padding: 0 0 3px;
+    position: absolute;
+    right: 16px;
+    top: 12px;
+    transition: background-color 200ms ease, border-color 200ms ease, color 200ms ease;
+    width: 44px;
+    z-index: 2;
+  }
+
+  .w3-top .mobile-menu-toggle[aria-expanded="true"] {
+    background: transparent !important;
+    border-color: #000000;
+    color: #000000;
+  }
+
+  .w3-top .w3-bar .primary-navigation.w3-hide-small {
+    align-items: flex-end;
+    display: flex !important;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    max-width: none;
+    opacity: 0;
+    padding: 0;
+    pointer-events: none;
+    position: absolute;
+    right: 16px;
+    row-gap: 8px;
+    top: 64px;
+    transition: opacity 250ms ease, visibility 0s linear 250ms;
+    visibility: hidden;
+  }
+
+  .w3-top .w3-bar .primary-navigation.w3-hide-small.is-open {
+    opacity: 1;
+    pointer-events: auto;
+    transition-delay: 0s;
+    visibility: visible;
+  }
+
+  .w3-top .primary-navigation .upper-menu {
+    background: #1c1c1c !important;
+    border-radius: 999px;
+    color: #ffffff !important;
+    flex: 0 0 auto;
+    font-family: Neutral, Arial, sans-serif !important;
+    font-size: 15px !important;
+    font-weight: 400;
+    letter-spacing: normal !important;
+    line-height: 15px !important;
+    margin: 0;
+    opacity: 1 !important;
+    padding: 5px 10px 6px !important;
+    text-decoration: none;
+    text-shadow: none;
+    white-space: nowrap;
+  }
+
+  .w3-top .primary-navigation .upper-menu b {
+    color: #ffffff;
+    font-weight: 400;
+  }
+
+  .w3-top .primary-navigation > br {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) and (max-width: 700px) {
+  .w3-top .mobile-menu-toggle,
+  .w3-top .primary-navigation.w3-hide-small {
+    transition: none;
+  }
+}

@@ -3,7 +3,9 @@
 <title>Media Forensis</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="/MF_stylesheet.css?v=20260828-mobile-logo-lower">
+<link rel="stylesheet" href="/MF_navigation.css?v=20260828-mid-grey-selection">
+<script src="/MF_navigation.js?v=20260828-sitewide-mobile-menu" defer></script>
+<link rel="stylesheet" href="/MF_stylesheet.css?v=20260828-unselectable-landing-titles">
 
 <body style="background-image: linear-gradient(rgba(156,158,166,1), rgba(255,255,255,1))">
 
@@ -14,8 +16,11 @@
       <a href="#home" class="w3-bar-item w3-button drop-shadow-3p"
         style="letter-spacing:1px; font-size:90px; color:rgba(255, 255, 255, 0); font-family:robo; line-height: 90px">MF</a>
       
+      <button type="button" class="mobile-menu-toggle" id="mobile-menu-toggle"
+        aria-controls="primary-navigation" aria-expanded="false" aria-label="Open navigation">+</button>
+
     <!-- Float links to the right. Hide them on small screens -->
-      <div class="w3-right w3-hide-small">
+      <div class="w3-right w3-hide-small primary-navigation" id="primary-navigation">
 
         <a href="#projects" class="w3-bar-item w3-button upper-menu"><b>Projects</b></a>
 
